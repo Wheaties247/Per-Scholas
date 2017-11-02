@@ -20,24 +20,24 @@
 // // var dollars;
 // // var product;
 
- var i;
+//  var i;
 
- function vending(dollars, product){
- 	var change=(dollars-product);//change =6
- 	for (i=0;i<change;i++) {
- 	if (i==(change-1))
- 		{
- 			console.log('nando recived $'+ change+ ' in quarters. ;'+ (change*4));
- 		}
- 	}
- }
- vending(10,6);
- vending(20,2);
-var var1=12;
-var var2=18;
-function sum(var1,var2){
-	return var1+var2;
-}
+//  function vending(dollars, product){
+//  	var change=(dollars-product);//change =6
+//  	for (i=0;i<change;i++) {
+//  	if (i==(change-1))
+//  		{
+//  			console.log('nando recived $'+ change+ ' in quarters. ;'+ (change*4));
+//  		}
+//  	}
+//  }
+//  vending(10,6);
+//  vending(20,2);
+// var var1=12;
+// var var2=18;
+// function sum(var1,var2){
+// 	return var1+var2;
+// }
 
 // console.log(sum(var1,var2));
 
