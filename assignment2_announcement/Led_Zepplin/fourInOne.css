@@ -1,0 +1,128 @@
+
+			@keyframes pulse{
+				0%{
+					opacity:0;
+				}
+				50%{
+					opacity: 1;
+				}
+				100%{
+					opacity: 0;
+				}
+		}		/*My pulse animation*/
+		body,html{
+			height:100%;
+			width:100%;
+		}
+		#redBlackzep{/*parallax effect in index.html*/ 
+			height: 600px;
+			background: url('images/group_zep.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size:cover;
+			background-repeat: no-repeat;
+			padding: 100px;
+		}
+		.insideParaxx{
+			background: url('images/zep_openPalm.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size:cover;
+			background-repeat: no-repeat;
+			height: 600px;
+			padding: 100px;
+		}
+		#retroZep{
+			height:600px;
+			padding: 100px;
+			background: url('images/zep_retro.jpg');
+			background-attachment: fixed;
+			background-position: center;
+			background-size:cover;
+			background-repeat: no-repeat;
+		}
+		span{
+			color: rgb(242,101,86);
+		}
+		.index_h1{ 
+			color: rgb(242,181,50);
+			text-decoration: none;
+			word-spacing: 10px;
+			position:relative;
+			top:140px;
+			left:120px;
+			font-family: 'Lato', sans-serif;
+			font-size: 50px;
+			display: block;
+			animation-name:pulse;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;  
+		}/*end of index page CSS*/
+/*start of About page CSS*/
+.about_Hs{
+	text-align: center;
+	color: rgb(198,49,29);
+	display: block;
+}
+#slideShowBox{
+	position:relative;
+	left: 150px;
+	display: flex;
+	flex:1;
+	justify-content: center;
+	flex-flow: wrap; /*Flex BOX!!!! WOOT*/
+	align-content: stretch;
+	width: 500px;
+}
+.flexAssit{
+	width: 90%;
+	display: flex;
+	flex:1;
+	margin-bottom:2px;
+	color: rgb(198,49,29);
+	line-height: 15px;
+	border-radius: 20px;
+	background-color: rgba(0,0,50,.41);
+}
+#pageTwoBackground{
+	background: url(images/zep_buttons.jpeg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	padding: 100px;
+}
+.pagetwoAs{
+	margin-top: 30px;
+	border: dashed;
+	font-size: 15px;
+	text-decoration: none;
+	color: rgb(198,49,29);
+	line-height: 15px;
+	padding: 20px;
+	background: transparent;
+	background-color: transparent;
+}/*end of css for page 2*/
+/*start of Css for page 3*/
+.pageThreeBackground{
+	background:url(images/zep_bandName.jpg);
+	background-size: cover;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column; 
+}
+.home{
+	height: 35px;
+	background: url(images/coda.png);
+	
+
+}
+/*last page of css*/
+.finalbackground,table,th,td{
+	background: gray;
+	color:white;
+	height: 100%;
+	border-width: 5px;
+	padding-bottom: 50px;
+}

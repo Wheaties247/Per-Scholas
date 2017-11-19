@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="fourInOne.css">
+	<title>About Led Zepplin</title>
+</head>
+<body>
+<div id="pageTwoBackground">
+	<h1 class="about_Hs">Led Zepplin</h1>
+	<div id="slideShowBox">
+		<div class="flexAssit">
+		<img src="images/glyph_robert_Plant.png" height="250" width="250">
+		<img src="images/glyph_john_paul_jones.png" height="250" width="250">
+		</div>
+		<div class="flexAssit">
+			<img src="images/jimmy_page.jpg" class="slides" height="500" width="500" >
+			<img src="images/john_bonham.jpg" class="slides" height="500" width="500" >
+			<img src="images/john_paul_jones.jpg" class="slides" height="500" width="500" >
+			<img src="images/robert_plant.jpg" class="slides" height="500" width="500" >
+			<img src="images/group_zep.jpg" class="slides" height="500" width="500" >
+			<img src="images/first.png" class="slides" height="500" width="500">
+			<img src="images/second.png" class="slides" height="500" width="500">
+			<img src="images/third.png" class="slides" height="500" width="500">
+			<img src="images/fourth.png" class="slides" height="500" width="500">
+		</div>
+		<div class="flexAssit">
+			<img src="images/glyph_john_bonham.png" height="250" width="250">
+			<img src="images/glyph_jimmy_page.png" height="250" width="250">
+		</div>
+	<input type="button" value="Backwards" onclick="plusDivs(-1)">
+	<input type="button" value="Forwards" onclick="plusDivs(+1)">
+	</div>
+				
+			<h1 class="about_Hs">About Led Zepplin</h1>
+			<div class="flexAssit">
+				<p> It wasn't Led Zeppelin's thunderous volume, sledgehammer beat, and edge-of-mayhem arrangements that made it the most influential and successful heavy-metal pioneer. It was the band's finesse. Led Zeppelin used a guitar style that drew heavily on the blues. Jimmy Page blessed the group with a unique understanding of the guitar and the recording studio as electronic instruments, and of rock as sculptured sound; like Jimi Hendrix, Page had a reason for every bit of distortion, feedback, reverberation, and out-and-out noise that he incorporated. Few of the many acts that try to imitate Led Zeppelin can make the same claim.</p>
+				<p>Page and Robert Plant were also grounded in British folk music and fascinated by mythology, Middle Earth fantasy, and the occult, as became increasingly evident from the band's later albums (the fourth LP's title is comprised of four runic characters). A song that builds from a folk-baroque acoustic setting to screaming heavy metal, "Stairway to Heaven," fittingly became the best-known Led Zeppelin song and a staple of FM airplay, although like most of the group's "hits," it was never released as a single. Though sometimes critically derided during their lifespan, Led Zeppelin was unquestionably one of the most enduring bands in rock history, with U.S. sales of more than 100 million records.</p>
+			</div>
+	</div>
+		<a class="pagetwoAs" href="index.html">Click here to return to title page</a>
+		<a class="pagetwoAs" href="third_zepplin.html">Click here to hear their music</a>
+		<a class="pagetwoAs" href="fourth_zepplin.html">Click here to see interesting facts about the band</a>
+
+
+<script type="text/javascript">			
+var slideIndex=1;
+showDivs(slideIndex);
+function plusDivs(n) {
+			showDivs(slideIndex+=n);
+		}
+function showDivs(n) {
+	var i=0;
+	var x=document.getElementsByClassName("slides");
+	if (n> x.length) {
+		slideIndex=1;
+	}
+	if (n<1){
+		slideIndex=x.length;
+	}
+	while(i<x.length){
+		x[i].style.display="none";
+	x[slideIndex-1].style.display="block";
+	i++;
+	}
+}
+
+</script>
+</body>
+</html>
